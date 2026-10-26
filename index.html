@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Bureau Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header>
+        <nav>
+            <div class="logo">ARCH▲STUDIO</div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section Component -->
+        <section class="hero">
+            <h1>Designing Space for Living</h1>
+            <p>Discover our architectural concepts and designs.</p>
+            <a href="#projects" class="cta-btn">Explore Portfolio</a>
+        </section>
+
+        <!-- Grid Section Component -->
+        <section id="projects" class="projects-grid">
+            <article class="project-card">
+                <img src="images/project1.png" alt="Project Astana">
+                <p>Area: 250 m², Year: 2022, Location: Astana</p>
+            </article>
+            <article class="project-card">
+                <img src="images/project2.png" alt="Project Almaty">
+                <p>Area: 180 m², Year: 2023, Location: Almaty</p>
+            </article>
+            <article class="project-card">
+                <img src="images/project3.png" alt="Project Shymkent">
+                <p>Area: 320 m², Year: 2024, Location: Shymkent</p>
+            </article>
+        </section>
+
+        <!-- Feedback Form Component -->
+        <section class="feedback-section">
+            <h2>Project Requirements</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="area">Building Area</label>
+                    <input type="number" id="area" placeholder="Enter area in m²" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Constraints</label>
+                    <input type="text" id="budget" placeholder="Specify budget range" required>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer id="contacts">
+        <div class="footer-content">
+            <p>ARCH▲STUDIO • CONTACTS</p>
+            <p>123 Architecture Ave., Almaty • +7 (727) 123-45-67 • studio@arch.kz</p>
+            <p>©️ 2024 ARCH▲STUDIO. All Rights Reserved. Certifications & Publications</p>
+        </div>
+    </footer>
+</body>
+</html>
