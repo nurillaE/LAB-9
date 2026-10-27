@@ -8,16 +8,12 @@
 </head>
 <body>
 
-    <!-- Чекбокс переключения темы (Mobile & Desktop) -->
-    <input type="checkbox" id="theme-toggle">
-
     <div class="page-wrapper">
-        <!-- Header / Navigation Component -->
+
         <header>
             <nav>
                 <div class="logo">ARCHI.STUDIO</div>
-                
-                <!-- Гамбургер-иконка для мобильных устройств -->
+              
                 <input type="checkbox" id="burger-toggle" class="burger-toggle">
                 <label for="burger-toggle" class="burger-btn">
                     <span></span>
@@ -41,7 +37,7 @@
             <a href="#projects" class="cta-btn">View Portfolio</a>
         </section>
 
-        <!-- Grid Section Component (Architectural Objects) -->
+        <!-- Grid Section Component -->
         <main id="projects" class="projects-grid">
             <article class="project-card">
                 <img src="images/project1.png" alt="Modern Minimalist Villa">
@@ -95,16 +91,23 @@
             </form>
         </section>
 
-        <!-- Footer Component -->
+        <!-- Footer Component с рабочей кнопкой переключения темы -->
         <footer>
             <div class="footer-content">
                 <p>&copy; 2026 Architecture Bureau. All rights reserved.</p>
                 <div class="theme-switcher">
-                    <label for="theme-toggle" class="theme-btn">🌗 Switch Theme (Light / Dark)</label>
+                    <button id="theme-switch-btn" class="theme-btn" type="button">🌗 Switch Theme (Light / Dark)</button>
                 </div>
             </div>
         </footer>
     </div>
+
+    <script>
+        const themeBtn = document.getElementById('theme-switch-btn');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+        });
+    </script>
 
 </body>
 </html>
