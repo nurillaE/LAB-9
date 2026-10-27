@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +7,104 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Component -->
-    <header>
-        <nav>
-            <div class="logo">ARCH▲STUDIO</div>
-            <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+    <!-- Чекбокс переключения темы (Mobile & Desktop) -->
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="page-wrapper">
+        <!-- Header / Navigation Component -->
+        <header>
+            <nav>
+                <div class="logo">ARCHI.STUDIO</div>
+                
+                <!-- Гамбургер-иконка для мобильных устройств -->
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <label for="burger-toggle" class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- Hero Section Component -->
         <section class="hero">
             <h1>Designing Space for Living</h1>
-            <p>Discover our architectural concepts and designs.</p>
-            <a href="#projects" class="cta-btn">Explore Portfolio</a>
+            <p>Innovative architectural solutions and modern spaces crafted with precision.</p>
+            <a href="#projects" class="cta-btn">View Portfolio</a>
         </section>
 
-        <!-- Grid Section Component -->
-        <section id="projects" class="projects-grid">
+        <!-- Grid Section Component (Architectural Objects) -->
+        <main id="projects" class="projects-grid">
             <article class="project-card">
-                <img src="images/project1.png" alt="Project Astana">
-                <p>Area: 250 m², Year: 2022, Location: Astana</p>
+                <img src="images/project1.png" alt="Modern Minimalist Villa">
+                <h3>Minimalist Villa</h3>
+                <p>Area: 350 m² | Year: 2024 | Location: Almaty</p>
             </article>
+
             <article class="project-card">
-                <img src="images/project2.png" alt="Project Almaty">
-                <p>Area: 180 m², Year: 2023, Location: Almaty</p>
+                <img src="images/project2.png" alt="Urban Glass Complex">
+                <h3>Urban Glass Complex</h3>
+                <p>Area: 1200 m² | Year: 2025 | Location: Astana</p>
             </article>
+
             <article class="project-card">
-                <img src="images/project3.png" alt="Project Shymkent">
-                <p>Area: 320 m², Year: 2024, Location: Shymkent</p>
+                <img src="images/project3.png" alt="Eco Mountain Residence">
+                <h3>Eco Mountain Residence</h3>
+                <p>Area: 480 m² | Year: 2026 | Location: Medeu</p>
             </article>
-        </section>
+        </main>
 
         <!-- Feedback Form Component -->
-        <section class="feedback-section">
-            <h2>Project Requirements</h2>
-            <form>
+        <section id="contacts" class="feedback-section">
+            <h2>Start Your Project</h2>
+            <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (700) 000-0000" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="area">Building Area</label>
-                    <input type="number" id="area" placeholder="Enter area in m²" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                 </div>
+
                 <div class="form-group">
+                    <label for="area">Building Area (m²)</label>
+                    <input type="number" id="area" name="area" placeholder="e.g. 250" required>
+                </div>
+
+                <div class="form-group full-width">
                     <label for="budget">Budget Constraints</label>
-                    <input type="text" id="budget" placeholder="Specify budget range" required>
+                    <input type="text" id="budget" name="budget" placeholder="e.g. $50,000 - $100,000" required>
                 </div>
-                <button type="submit" class="send-btn">Send</button>
+
+                <button type="submit" class="send-btn">Submit Request</button>
             </form>
         </section>
-    </main>
 
-    <!-- Footer Component -->
-    <footer id="contacts">
-        <div class="footer-content">
-            <p>ARCH▲STUDIO • CONTACTS</p>
-            <p>123 Architecture Ave., Almaty • +7 (727) 123-45-67 • studio@arch.kz</p>
-            <p>©️ 2024 ARCH▲STUDIO. All Rights Reserved. Certifications & Publications</p>
-        </div>
-    </footer>
+        <!-- Footer Component -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Architecture Bureau. All rights reserved.</p>
+                <div class="theme-switcher">
+                    <label for="theme-toggle" class="theme-btn">🌗 Switch Theme (Light / Dark)</label>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
