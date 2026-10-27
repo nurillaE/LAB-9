@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture Bureau Catalog</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -13,7 +13,6 @@
         <nav>
             <div class="logo">ARCHI.STUDIO</div>
             
-            <!-- Чекбокс и кнопка бургера (теперь прямой сосед ссылок) -->
             <input type="checkbox" id="burger-toggle" class="burger-toggle">
             <label for="burger-toggle" class="burger-btn">
                 <span></span>
@@ -21,12 +20,10 @@
                 <span></span>
             </label>
 
-            <!-- Кнопка темы -->
             <div class="nav-right">
                 <button id="theme-switch-btn" class="theme-btn" type="button">🌗 Theme</button>
             </div>
 
-            <!-- Навигационные ссылки -->
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
@@ -97,10 +94,34 @@
         </form>
     </section>
 
-    <!-- Footer Component -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Architecture Bureau. All rights reserved.</p>
+    <!-- Footer Component (с навигационными ссылками, сертификатами и публикациями) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Certificates & Legal</h4>
+                <p>License: #KZ-Arch-2026-89</p>
+                <p>ISO 9001 Quality Assured</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Publications</h4>
+                <ul>
+                    <li><a href="#" target="_blank">Architectural Digest Feature</a></li>
+                    <li><a href="#" target="_blank">Modern Design Journal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Architecture Bureau 'ARCHI.STUDIO'. All rights reserved.</p>
         </div>
     </footer>
 
